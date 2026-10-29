@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport content=" width=device-width, inicial-scale=1,0>
+    </title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</body>
+<header>
+    <h1>meu novo blog tech</h1>
+    <p>eu gosto de jogar futebol</p>
+</header>
+
+<main>
+    <article>
+         <img src="imagem-blog.jpg"
+     alt="Um jogador de futebol focado, vestido com camisa escura, 
+    estendendo a mão em direção a uma bola de futebol em primeiro plano em um estádio iluminado.
+     Na parte inferior, o texto em destaque diz " PASSES & JOGADAS com o subtítulo FUTEBOL DO JEITO CERTO.>
+    </div>
+    <h2>meu primeiro post</h2>
+    <p class="artigo-autot">por marcos bastiani</p>
+    <p>boas-vindas ao meu novo blog!
+        aqui vou compartilhar jogadas e passes de futebol e muito mais</p>
+    <button>😍<span>0</span></button>
+    <button>🎯​<span>0</span></button>
+    </div>
+    </article>
+    <article>
+        <img src="imagem-blog.jpg" alt="Um jogador de futebol focado, vestido com camisa escura, 
+             estendendo a mão em direção a uma bola de futebol em primeiro plano em um estádio iluminado.
+             Na parte inferior, o texto em destaque diz " PASSES & JOGADAS com o subtítulo FUTEBOL DO JEITO CERTO.>
+    </div>
+    <h2>meu primeiro post</h2>
+    <p class="artigo-autot">por marcos bastiani</p>
+    <p>boas-vindas ao meu novo blog!
+     aqui vou compartilhar jogadas e passes de futebol e muito mais</p>
+    <button>😍<span>0</span></button>
+    <button>🎯​<span>0</span></button>
+    </div>
+   </article>
+</main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao){
+        let curtiu = false;
+        botao.addEventListener("click",botaoclicado)
+        function botaoclicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+               texto.textContent++; 
+               curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+
+
+
+
+</script>
+</html>
